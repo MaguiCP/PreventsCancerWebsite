@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="image/Imagem1.png">
+    <title>Prevents Cancer</title>
+    <link rel="stylesheet" type="text/css" href="Css/Anamnese.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="quadrado">
+            <div class="quadrado2">
+                <a href="PaginaInicial.html">Pagina Inicial</a>
+            </div>
+            <script type="text/javascript" src="Java/Anamnese.js"></script>
+            <h1>Ficha de Anamnese</h1>
+            <hr>
+            <h2>Identifica&ccedil;&atilde;o</h2>
+            <form>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                <label for="nome">N de Identifica&ccedil;&atilde;o Civil (CC):</label>
+                <input type="text" id="cc" name="cc"><br><br>
+                <label for="nome">N de Utente Saude:</label>
+                <input type="text" id="numutentesaude" name="numutentesaude"><br><br>
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data"><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">/
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+                <label for="altura">Altura (em metros):</label>
+                <input type="number" id="altura" name="altura" step="0.01"><br><br>
+                <label for="peso">Peso (em kg):</label>
+                <input type="number" id="peso" name="peso" step="0.1"><br><br>
+                <h2>Hist&oacute;rico do paciente</h2>
+            </form>
+            <form>
+                <p>J&aacute; teve algum tipo de cancro?</p>
+                <label>
+                    <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas1()">Sim
+                </label>
+                <label>
+                    <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+                </label>
+                <div id="perguntas-adicionais1" style="display: none;">
+                    <p>Se sim, qual?</p>
+                    <input type="text" name="tipo de cancro">
+            </form>
+            <form>
+                <p>H&aacute; quanto tempo?</p>
+                <select name="frequencia">
+                    <option value="HÃ¡ menos de 5 anos">H&aacute; menos 5 anos</option>
+                    <option value="HÃ¡ mais de 5 anos">H&aacute; mais de 5 anos</option>
+                </select>
+        </div>
+        </form>
+        <form>
+            <p>Tem algum hist&oacute;rico na fam&iacute;lia?</p>
+            <label>
+                <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas2()">Sim
+            </label>
+            <label>
+                <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+            </label>
+            <div id="perguntas-adicionais2" style="display: none;">
+                <p>Qual &eacute; o grau de parentesco ?</p>
+                <select name="Grau de parentesco">
+                    <option value="">Selecione uma op&ccedil;&atilde;o</option>
+                    <option value="Pai">Pai</option>
+                    <option value="IrmÃ£o">Irm&atilde;o</option>
+                    <option value="AvÃ´">Av&ocirc</option>
+                </select>
+            </div>
+        </form>
+        <form>
+            <p>Toma algum medicamento?</p>
+            <label>
+                <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas3()">Sim
+            </label>
+            <label>
+                <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+            </label>
+            <div id="perguntas-adicionais3" style="display: none;">
+                <p>Se sim, qual?</p>
+                <input type="text" name="tipo de medicamento">
+            </div>
+        </form>
+        <form>
+            <p>Tem alguma doen&ccedil;a cr&oacute;nica ?</p>
+            <label>
+                <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas4()">Sim
+            </label>
+            <label>
+                <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+            </label>
+            <div id="perguntas-adicionais4" style="display: none;">
+                <p>Se sim, qual?</p>
+                <input type="text" name="DoenÃ§a crÃ³nica">
+            </div>
+        </form>
+        <h2>Estilo de vida</h2>
+        <form>
+            <p>J&aacute; consumiu algum tipo de anabolizante ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+        </form>
+        <form>
+            <p>Com que frequ&ecirc;ncia pratica exerc&iacute;cio f&iacute;sico ?</p>
+            <select name="cor">
+                <option value="diariamente">Diariamente</option>
+                <option value="de 3 vezes semana"> + de 3 vezes na semana </option>
+                <option value="1 ou 2 vezes na semana">1 ou 2 vezes na semana</option>
+            </select>
+        </form>
+        <form>
+            <p>Fuma ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+        </form>
+        <form>
+            <p>Consome &aacute;lcool de maneira regular ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+            <h2>Sintomas</h2>
+        </form>
+        <p>Preencha a op&ccedil;&atilde;o "SIM" se apresenta o sintoma: </p>
+        <form>
+            <p>Sangue na urina ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+        </form>
+        <form>
+            <p>Dor ao urinar ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+        </form>
+        <form>
+            <p>Dor frequente na zona inferior das costas, nas ancas ou na zona superior das coxas ?</p>
+            <label><input type="radio" name="resposta" value="sim">Sim</label>
+            <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+    </div>
+    </div>
+</body>
+
+</html>

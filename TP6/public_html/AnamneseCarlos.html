@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="image/Imagem1.png">
+    <title>Prevents Cancer</title>
+    <link rel="stylesheet" type="text/css" href="Css/Anamnese.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="quadrado">
+            <div class="quadrado2">
+                <a href="MedicoVerUtente.html">Voltar</a>
+            </div>
+            <h1>Ficha de Anamnese</h1>
+            <hr>
+            <h2>Identifica&ccedil;&atilde;o</h2>
+            <form>
+                <label for="nome">Nome completo:</label>
+                Carlos Carvalho Silva <br><br>
+                <label for="nome">N Identifica&ccedil;&atilde;o Civil (CC):</label>
+                111111111-111 <br><br>
+                <label for="nome">N de Utente Saude:</label>
+                111111111 <br><br>
+                <label for="data">Data de nascimento:</label>
+                10/10/1970<br><br>
+                <label for="email">E-mail:</label>
+                carlos@silva<br><br>
+                <label for="telefone">Telefone:</label>
+                123456789<br><br>
+                <label for="altura">Altura (em metros):</label>
+                1,72<br><br>
+                <label for="peso">Peso (em kg):</label>
+                80<br><br>
+                <h2>Hist&oacute;rico do paciente</h2>
+            </form>
+            <form>
+                <p>J&aacute; teve algum tipo de cancro?</p>
+                <label>
+                    <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas1()">Sim
+                </label>
+                <label>
+                    <input type="radio" name="resposta" value="nÃ£o" checked>N&atildeo
+                </label>
+                <div id="perguntas-adicionais1" style="display: none;">
+                    <p>Se sim, qual?</p>
+                    <input type="text" name="tipo de cancro">
+
+                    <p>H&aacute; quanto tempo?</p>
+                    <select name="frequencia">
+                        <option value="HÃ¡ menos de 5 anos">H&aacute; menos 5 anos</option>
+                        <option value="HÃ¡ mais de 5 anos">H&aacute; mais de 5 anos</option>
+                    </select>
+                </div>
+            </form>
+            <form>
+                <p>Tem algum hist&oacute;rico na fam&iacute;lia?</p>
+                <label>
+                    <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas2()">Sim
+                </label>
+                <label>
+                    <input type="radio" name="resposta" value="nÃ£o" checked>N&atilde;o
+                </label>
+                <div id="perguntas-adicionais2" style="display: none;">
+                    <p>Qual &eacute; o grau de parentesco ?</p>
+                    <select name="Grau de parentesco">
+                        <option value="">Selecione uma op&ccedil;&atilde;o</option>
+                        <option value="Pai">Pai</option>
+                        <option value="IrmÃ£o">Irm&atilde;o</option>
+                        <option value="AvÃ´">Av&ocirc</option>
+                    </select>
+                </div>
+            </form>
+            <form>
+                <p>Toma algum medicamento?</p>
+                <label>
+                    <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas3()" checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+                </label>
+                <p>Se sim, qual?</p>
+                <p>Metformina
+                <p>
+            </form>
+            <form>
+                <p>Tem alguma doen&ccedil;a cr&oacute;nica ?</p>
+                <label>
+                    <input type="radio" name="resposta" value="sim" onclick="exibirPerguntas4()" checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="resposta" value="nÃ£o">N&atilde;o
+                </label>
+                <p>Se sim, qual?</p>
+                <p>Diabetes</p>
+            </form>
+            <h2>Estilo de vida</h2>
+            <form>
+                <p>J&aacute; consumiu algum tipo de anabolizante ?</p>
+                <label><input type="radio" name="resposta" value="sim">Sim</label>
+                <label><input type="radio" name="resposta" value="nao" checked>N&atilde;o</label>
+            </form>
+            <form>
+                <p>Com que frequ&ecirc;ncia pratica exerc&iacute;cio f&iacute;sico ?</p>
+                <select name="cor">
+
+                    <option value="1 ou 2 vezes na semana">1 ou 2 vezes na semana</option>
+                </select>
+            </form>
+            <form>
+                <p>Fuma ?</p>
+                <label><input type="radio" name="resposta" value="sim" checked>Sim</label>
+                <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+            </form>
+            <form>
+                <p>Consome &aacute;lcool de maneira regular ?</p>
+                <label><input type="radio" name="resposta" value="sim">Sim</label>
+                <label><input type="radio" name="resposta" value="nao" checked>N&atilde;o</label>
+            </form>
+            <h2>Sintomas</h2>
+            <p>Preencha a op&ccedil;&atilde;o "SIM" se apresenta o sintoma: </p>
+            <form>
+                <p>Sangue na urina ?</p>
+                <label><input type="radio" name="resposta" value="sim">Sim</label>
+                <label><input type="radio" name="resposta" value="nao" checked>N&atilde;o</label>
+            </form>
+            <form>
+                <p>Dor ao urinar ?</p>
+                <label><input type="radio" name="resposta" value="sim" checked>Sim</label>
+                <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+            </form>
+            <form>
+                <p>Dor frequente na zona inferior das costas, nas ancas ou na zona superior das coxas ?</p>
+                <label><input type="radio" name="resposta" value="sim" checked>Sim</label>
+                <label><input type="radio" name="resposta" value="nao">N&atilde;o</label>
+            </form>
+        </div>
+    </div>
+    <script>
+        function exibirPerguntas1() {
+            var perguntas = document.getElementById("perguntas-adicionais1");
+            if (perguntas.style.display === "none") {
+                perguntas.style.display = "block";
+            } else {
+                perguntas.style.display = "none";
+            }
+        }
+        function exibirPerguntas2() {
+            var perguntas = document.getElementById("perguntas-adicionais2");
+            if (perguntas.style.display === "none") {
+                perguntas.style.display = "block";
+            } else {
+                perguntas.style.display = "none";
+            }
+        }
+        function exibirPerguntas3() {
+            var perguntas = document.getElementById("perguntas-adicionais3");
+            if (perguntas.style.display === "none") {
+                perguntas.style.display = "block";
+            } else {
+                perguntas.style.display = "none";
+            }
+        }
+        function exibirPerguntas4() {
+            var perguntas = document.getElementById("perguntas-adicionais4");
+            if (perguntas.style.display === "none") {
+                perguntas.style.display = "block";
+            } else {
+                perguntas.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
