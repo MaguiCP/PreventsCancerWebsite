@@ -21,7 +21,7 @@ This project is a website dedicated to prostate cancer prevention. The website p
 
 ### Features
 
-- **Top Navigation Bar**: Links to various pages including Contacts, Treatments, Patient Profile, Doctor Profile, Anamnesis Form, and Log-in.
+- **Top Navigation Bar**: Links to various pages including Contacts, Treatments, Patient Profile, Doctor Profile, Anamnesis Form and Log-in.
 - **Image Carousel**: Displays images and information about the organization.
 - **About Us Section**: Provides detailed information about the organization, its mission, and the services offered.
 - **Anamnesis Form**: Allows users to fill out the anamnesis form with information about their health history. (Note: In this version, the form can be filled out but cannot be submitted to a database.)
