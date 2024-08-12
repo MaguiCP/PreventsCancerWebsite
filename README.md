@@ -4,11 +4,11 @@
 
 ### Descrição
 
-Este projeto é um website dedicado à prevenção do cancro de próstata. O website oferece informações sobre a importância de exames regulares e um estilo de vida saudável para prevenir ou detetar o cancro de próstata nos seus estágios iniciais. Além disso, também oferece recursos sobre prevenção, diagnóstico e opções de tratamento disponíveis para o cancro de próstata.
+Este projeto é um website dedicado à prevenção do cancro de próstata. O website oferece informações sobre a importância de exames regulares e um estilo de vida saudável para prevenir ou detectar o cancro de próstata nos seus estágios iniciais. Além disso, também oferece recursos sobre prevenção, diagnóstico e opções de tratamento disponíveis para o cancro de próstata.
 
 ### Funcionalidades
 
-- **Barra de Navegação Superior**: Links para várias páginas, incluindo Contactos, Tratamentos, Perfil Utente, Perfil Medico, Ficha de Anamnese e Log-in.
+- **Barra de Navegação Superior**: Links para várias páginas incluindo Contactos, Tratamentos, Perfil Utente, Perfil Medico, Ficha de Anamnese e Log-in.
 - **Carrossel de Imagens**: Mostra imagens e informações sobre a organização.
 - **Secção Sobre Nós**: Fornece informações detalhadas sobre a organização, a sua missão e os serviços oferecidos.
 - **Ficha de Anamnese**: Permite que os utilizadores preencham o formulário de anamnese com informações sobre o seu histórico de saúde. (Nota: Nesta versão, o formulário pode ser preenchido, mas não é possível enviá-lo para uma base de dados.)
